@@ -1,7 +1,12 @@
-import React from "react";
-import { styled } from "./stitches.config";
+import { StitchesVariants } from "@stitches/core";
+import { ReactNode } from "react";
+import { styled } from "../stitches.config";
 
-export const Button = styled("button", {
+export type ButtonProps = { children?: ReactNode } & StitchesVariants<
+  typeof StyledButton
+>;
+
+const StyledButton = styled("button", {
   fontWeight: "bold",
   borderRadius: "0",
   boxShadow: "2px 2px 0 0 rgb(0 0 0 / 10%)",
@@ -60,3 +65,5 @@ export const Button = styled("button", {
     size: "md",
   },
 });
+
+export const Button = (props: ButtonProps) => <StyledButton {...props} />;

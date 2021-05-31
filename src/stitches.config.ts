@@ -1,6 +1,5 @@
-// @ts-nocheck
 import { createCss, defaultThemeMap } from "@stitches/react";
-import { space, colors } from '../token';
+import { space, colors } from './token';
 
 export const { styled, css, global, keyframes, getCssString, theme } = createCss({
     theme: {
@@ -8,9 +7,9 @@ export const { styled, css, global, keyframes, getCssString, theme } = createCss
       space,
     },
     media: {
-      sm: '(min-width: 640px)',
-      md: '(min-width: 768px)',
-      lg: '(min-width: 1024px)',
+      bp1: '(min-width: 640px)',
+      bp2: '(min-width: 768px)',
+      bp3: '(min-width: 1024px)',
     },
     utils: {
       m: (config) => (value) => ({
