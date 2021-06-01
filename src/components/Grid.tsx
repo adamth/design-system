@@ -6,10 +6,17 @@ export type GridProps = {
   children?: ReactNode;
 } & StitchesVariants<typeof StyledGrid>;
 
+export type GridItemProps = {
+  children?: ReactNode;
+} & StitchesVariants<typeof StyledGridItem>;
+
 const StyledGrid = styled("div", {
   display: "grid",
   variants: {
     gap: {
+      0: {
+        gap: "0px",
+      },
       1: {
         gap: "$1",
       },
@@ -21,6 +28,24 @@ const StyledGrid = styled("div", {
       },
       4: {
         gap: "$12",
+      },
+      5: {
+        gap: "$16",
+      },
+      6: {
+        gap: "$20",
+      },
+      7: {
+        gap: "$24",
+      },
+      8: {
+        gap: "$28",
+      },
+      9: {
+        gap: "$32",
+      },
+      10: {
+        gap: "$36",
       },
     },
     cols: {
@@ -146,90 +171,217 @@ const StyledGridItem = styled("div", {
         gridColumnStart: 12,
       },
     },
+    rowStart: {
+      1: {
+        gridRowStart: 1,
+      },
+      2: {
+        gridRowStart: 2,
+      },
+      3: {
+        gridRowStart: 3,
+      },
+      4: {
+        gridRowStart: 4,
+      },
+      5: {
+        gridRowStart: 5,
+      },
+      6: {
+        gridRowStart: 6,
+      },
+      7: {
+        gridRowStart: 7,
+      },
+      8: {
+        gridRowStart: 8,
+      },
+      9: {
+        gridRowStart: 9,
+      },
+      10: {
+        gridRowStart: 10,
+      },
+      11: {
+        gridRowStart: 11,
+      },
+      12: {
+        gridRowStart: 12,
+      },
+    },
     colEnd: {
       1: {
         gridColumnEnd: 1,
-      },2: {
+      },
+      2: {
         gridColumnEnd: 2,
-      },3: {
+      },
+      3: {
         gridColumnEnd: 3,
-      },4: {
+      },
+      4: {
         gridColumnEnd: 4,
-      },5: {
+      },
+      5: {
         gridColumnEnd: 5,
-      },6: {
+      },
+      6: {
         gridColumnEnd: 6,
-      },7: {
+      },
+      7: {
         gridColumnEnd: 7,
-      },8: {
+      },
+      8: {
         gridColumnEnd: 8,
-      },9: {
+      },
+      9: {
         gridColumnEnd: 9,
-      },10: {
+      },
+      10: {
         gridColumnEnd: 10,
-      },11: {
+      },
+      11: {
         gridColumnEnd: 11,
-      },12: {
+      },
+      12: {
         gridColumnEnd: 12,
+      },
+    },
+    rowEnd: {
+      1: {
+        gridRowEnd: 1,
+      },
+      2: {
+        gridRowEnd: 2,
+      },
+      3: {
+        gridRowEnd: 3,
+      },
+      4: {
+        gridRowEnd: 4,
+      },
+      5: {
+        gridRowEnd: 5,
+      },
+      6: {
+        gridRowEnd: 6,
+      },
+      7: {
+        gridRowEnd: 7,
+      },
+      8: {
+        gridRowEnd: 8,
+      },
+      9: {
+        gridRowEnd: 9,
+      },
+      10: {
+        gridRowEnd: 10,
+      },
+      11: {
+        gridRowEnd: 11,
+      },
+      12: {
+        gridRowEnd: 12,
       },
     },
     colSpan: {
       1: {
         gridColumnEnd: "span 1",
-      },2: {
+      },
+      2: {
         gridColumnEnd: "span 2",
-      },3: {
+      },
+      3: {
         gridColumnEnd: "span 3",
-      },4: {
+      },
+      4: {
         gridColumnEnd: "span 4",
-      },5: {
+      },
+      5: {
         gridColumnEnd: "span 5",
-      },6: {
+      },
+      6: {
         gridColumnEnd: "span 6",
-      },7: {
+      },
+      7: {
         gridColumnEnd: "span 7",
-      },8: {
+      },
+      8: {
         gridColumnEnd: "span 8",
-      },9: {
+      },
+      9: {
         gridColumnEnd: "span 9",
-      },10: {
+      },
+      10: {
         gridColumnEnd: "span 10",
-      },11: {
+      },
+      11: {
         gridColumnEnd: "span 11",
-      },12: {
+      },
+      12: {
         gridColumnEnd: "span 12",
       },
     },
     rowSpan: {
       1: {
         gridRowEnd: "span 1",
-      },2: {
+      },
+      2: {
         gridRowEnd: "span 2",
-      },3: {
+      },
+      3: {
         gridRowEnd: "span 3",
-      },4: {
+      },
+      4: {
         gridRowEnd: "span 4",
-      },5: {
+      },
+      5: {
         gridRowEnd: "span 5",
-      },6: {
+      },
+      6: {
         gridRowEnd: "span 6",
-      },7: {
+      },
+      7: {
         gridRowEnd: "span 7",
-      },8: {
+      },
+      8: {
         gridRowEnd: "span 8",
-      },9: {
+      },
+      9: {
         gridRowEnd: "span 9",
-      },10: {
+      },
+      10: {
         gridRowEnd: "span 10",
-      },11: {
+      },
+      11: {
         gridRowEnd: "span 11",
-      },12: {
+      },
+      12: {
         gridRowEnd: "span 12",
       },
-    }
+    },
   },
 });
 
-export const GridItem = ({ colStart, colEnd, colSpan, rowStart, rowSpan, ...rest }) => {
-  return <StyledGridItem colStart={colStart} colEnd={colEnd} colSpan={colSpan} rowSpan={rowSpan} {...rest} />;
+export const GridItem = ({
+  colStart,
+  colEnd,
+  colSpan,
+  rowStart,
+  rowEnd,
+  rowSpan,
+  ...rest
+}: GridItemProps) => {
+  return (
+    <StyledGridItem
+      colStart={colStart}
+      rowStart={rowStart}
+      colEnd={colEnd}
+      rowEnd={rowEnd}
+      colSpan={colSpan}
+      rowSpan={rowSpan}
+      {...rest}
+    />
+  );
 };
