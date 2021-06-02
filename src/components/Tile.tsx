@@ -13,7 +13,6 @@ export const Tile = () => {
           <Image
             css={{ width: "65px" }}
             src="https://cdn.shopify.com/s/files/1/0024/9803/5810/products/339540-Product-0-I_300x300.jpg?v=1572321461"
-            alt="item"
           />
         </GridItem>
         <GridItem colSpan={4} rowSpan={1} css={{ paddingRight: "10px" }}>
@@ -22,7 +21,7 @@ export const Tile = () => {
         <GridItem
           colSpan={4}
           rowSpan={1}
-          css={{ paddingBottom: "15px", fontWeight: "700" }}
+          css={{ paddingBottom: "15px", fontWeight: 700 }}
         >
           Diesel Full Guard 2.5 Smart Watch (Black Silicone)
         </GridItem>
