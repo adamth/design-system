@@ -66,11 +66,7 @@ Responsive.args = {
     "@bp2": 3,
     "@bp3": 6,
   },
-  gap: {
-    "@initial": 1,
-    "@bp2": 3,
-    "@bp3": 5,
-  },
+  gap: 2,
   children: [
     <FilledBox />,
     <FilledBox />,
