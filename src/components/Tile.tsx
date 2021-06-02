@@ -2,6 +2,7 @@ import React from "react";
 import { Box } from "./Box";
 import { Grid, GridItem } from "./Grid";
 import { Image } from "./Image";
+import { Text } from "./Text";
 import { PriceTag } from "./PriceTag";
 import { TileActions } from "./TileActions";
 
@@ -23,7 +24,7 @@ export const Tile = () => {
           rowSpan={1}
           css={{ paddingBottom: "15px", fontWeight: 700 }}
         >
-          Diesel Full Guard 2.5 Smart Watch (Black Silicone)
+          <Text size="sm">Diesel Full Guard 2.5 Smart Watch (Black Silicone)</Text>
         </GridItem>
         <GridItem colSpan={4} rowSpan={1} css={{ paddingBottom: "15px" }}>
           Ratings
@@ -32,12 +33,13 @@ export const Tile = () => {
       <Box
         css={{
           display: "flex",
-          bg: "$yellow",
+          bg: "$yellow500",
           justifyContent: "space-between",
         }}
       >
         <PriceTag
           price="$499"
+          size="lg"
           css={{
             marginLeft: "10px",
             alignSelf: "flex-start",

@@ -13,26 +13,30 @@ const StyledButton = styled("button", {
   "&:hover": {
     boxShadow: "2px 2px 0 0 rgb(0 0 0 / 30%)",
   },
-  px: "$9",
-  py: "$3",
+  px: "$6",
+  py: "$2",
   variants: {
     size: {
       sm: {
-        fontSize: "14px",
+        fontSize: "$xs",
       },
       md: {
-        fontSize: "24px",
+        fontSize: "$md",
       },
+      lg: {
+        fontSize: "$lg",
+      }
     },
     type: {
       primary: {
         bg: "$black",
         color: "white",
         "&:hover": {
-          bg: "$gray800",
+          borderColor: "$grey800",
+          bg: "$grey800",
         },
         "&:active": {
-          bg: "$gray700",
+          bg: "$grey700",
         },
       },
       secondary: {
@@ -40,21 +44,22 @@ const StyledButton = styled("button", {
         borderColor: "black",
         color: "black",
         "&:hover": {
-          borderColor: "gray.800",
-          color: "gray.800",
+          borderColor: "$grey800",
+          color: "$grey800",
         },
         "&:active": {
-          bg: "gray.50",
+          bg: "$grey50",
         },
       },
       action: {
-        bg: "green.700",
+        bg: "$green500",
         color: "white",
         "&:hover": {
-          bg: "green.800",
+          borderColor: "$grey800",
+          bg: "$green600",
         },
         "&:active": {
-          bg: "green.600",
+          bg: "$green500",
         },
       },
       link: {},

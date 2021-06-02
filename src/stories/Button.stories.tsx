@@ -26,3 +26,10 @@ Secondary.args = {
   type: "secondary",
   children: "Button",
 };
+
+export const Action = Template.bind({});
+Action.args = {
+  size: "md",
+  type: "action",
+  children: "Button",
+};

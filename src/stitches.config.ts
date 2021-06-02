@@ -1,5 +1,5 @@
 import { createCss, defaultThemeMap } from "@stitches/react";
-import { space, colors, fonts } from "./token";
+import { space, colors, fonts, fontSizes } from "./token";
 
 export const {
   styled,
@@ -13,6 +13,7 @@ export const {
     colors,
     space,
     fonts,
+    fontSizes,
   },
   media: {
     bp1: "(min-width: 640px)",
@@ -50,6 +51,9 @@ export const {
 });
 
 export const globalStyles = global({
+  html: {
+    fontSize: "62.5%",
+  },
   "*": {
     margin: 0,
     padding: 0,

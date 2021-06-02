@@ -1,91 +1,101 @@
 export const space = {
-  0: "0px", // 0px
-  px: "1px", // 1px
-  "0.5": "0.125rem", // 2px
-  1: "0.25rem", // 4px
-  "1.5": "0.375rem", // 6px
-  2: "0.5rem", // 8px
-  "2.5": "0.625rem", // 10px
-  3: "0.75rem", // 12px
-  "3.5": "0.875rem", // 14px
-  4: "1rem", // 16px
-  5: "1.25rem", // 20px
-  6: "1.5rem", // 24px
-  7: "1.75rem", // 28px
-  8: "2rem", // 32px
-  9: "2.25rem", // 36px
-  10: "2.5rem", // 40px
-  11: "2.75rem", // 44px
-  12: "3rem", // 48px
-  14: "3.5rem", // 56px
-  16: "4rem", // 64px
-  20: "5rem", // 80px
-  24: "6rem", // 96px
-  28: "7rem", // 112px
-  32: "8rem", // 128px
-  36: "9rem", // 144px
-  40: "10rem", // 160px
-  44: "11rem", // 176px
-  48: "12rem", // 192px
-  52: "13rem", // 208px
-  56: "14rem", // 224px
-  60: "15rem", // 240px
-  64: "16rem", // 256px
-  72: "18rem", // 288px
-  80: "20rem", // 320px
-  96: "24rem", // 384px
-  112: "28rem", // 448px
-  128: "32rem", // 512px
-  144: "36rem", // 576px
-  160: "40rem", // 640px
-  "-px": "-1px", // 1px
-  "-0.5": "-0.125rem", // 2px
-  "-1": "-0.25rem", // 4px
-  "-1.5": "-0.375rem", // 6px
-  "-2": "-0.5rem", // 8px
-  "-2.5": "-0.625rem", // 10px
-  "-3": "-0.75rem", // 12px
-  "-3.5": "-0.875rem", // 14px
-  "-4": "-1rem", // 16px
-  "-5": "-1.25rem", // 20px
-  "-6": "-1.5rem", // 24px
-  "-7": "-1.75rem", // 28px
-  "-8": "-2rem", // 32px
-  "-9": "-2.25rem", // 36px
-  "-10": "-2.5rem", // 40px
-  "-11": "-2.75rem", // 44px
-  "-12": "-3rem", // 48px
-  "-14": "-3.5rem", // 56px
-  "-16": "-4rem", // 64px
-  "-20": "-5rem", // 80px
-  "-24": "-6rem", // 96px
-  "-28": "-7rem", // 112px
-  "-32": "-8rem", // 128px
-  "-36": "-9rem", // 144px
-  "-40": "-10rem", // 160px
-  "-44": "-11rem", // 176px
-  "-48": "-12rem", // 192px
-  "-52": "-13rem", // 208px
-  "-56": "-14rem", // 224px
-  "-60": "-15rem", // 240px
-  "-64": "-16rem", // 256px
-  "-72": "-18rem", // 288px
-  "-80": "-20rem", // 320px
-  "-96": "-24rem", // 384px
-  "-112": "-28rem", // 448px
-  "-128": "-32rem", // 512px
-  "-144": "-36rem", // 576px
-  "-160": "-40rem", // 640px
+  "-10": "-5em",
+  "-9": "-4em",
+  "-8": "-3em",
+  "-7": "-2.5em",
+  "-6": "-2em",
+  "-5": "-1.5em",
+  "-4": "-1em",
+  "-3": "-0.75em",
+  "-2": "-0.5em",
+  "-1": "-0.25em",
+  0: "0px",
+  1: "0.25em",
+  2: "0.5em",
+  3: "0.75em",
+  4: "1em",
+  5: "1.5em",
+  6: "2em",
+  7: "2.5em",
+  8: "3em",
+  9: "4em",
+  10: "5em",
 };
 
 export const colors = {
   black: "#000",
-  yellow: "#FFEC0F",
-  yellowLight: "#FFFD38",
-  red: "#E02020",
+  yellow50: "#FFFEF4",
+  yellow100: "#FFFCDB",
+  yellow200: "#FFF8A8",
+  yellow300: "#FFF475",
+  yellow400: "#FFF042",
+  yellow500: "#FFEC0F",
+  yellow600: "#DBCA00",
+  yellow700: "#A89B00",
+  yellow800: "#756C00",
+  yellow900: "#423D00",
+  red50: "#FCE9E9",
+  red100: "#F9D3D3",
+  red200: "#F3A6A6",
+  red300: "#EC7A7A",
+  red400: "#E64D4D",
+  red500: "#E02020",
+  red600: "#B41919",
+  red700: "#871313",
+  red800: "#5A0D0D",
+  red900: "#2E0606",
+  orange50: "#FFDFC1",
+  orange100: "#FFD2A7",
+  orange200: "#FFB874",
+  orange300: "#FF9D41",
+  orange400: "#FF830E",
+  orange500: "#DA6A00",
+  orange600: "#A75100",
+  orange700: "#743800",
+  orange800: "#412000",
+  orange900: "#0E0700",
+  blue50: "#9BF2FF",
+  blue100: "#81EEFF",
+  blue200: "#4EE7FF",
+  blue300: "#1BE1FF",
+  blue400: "#00C8E7",
+  blue500: "#009CB4",
+  blue600: "#007081",
+  blue700: "#00444E",
+  blue800: "#00171B",
+  blue900: "#000000",
+  green50: "#72FD72",
+  green100: "#58FD58",
+  green200: "#26FC26",
+  green300: "#03EC03",
+  green400: "#03B903",
+  green500: "#028702",
+  green600: "#015501",
+  green700: "#012201",
+  green800: "#000000",
+  green900: "#000000",
+  grey50: "#E3E3E3",
+  grey100: "#D6D6D6",
+  grey200: "#BDBDBD",
+  grey300: "#A3A3A3",
+  grey400: "#8A8A8A",
+  grey500: "#707070",
+  grey600: "#575757",
+  grey700: "#3D3D3D",
+  grey800: "#242424",
+  grey900: "#0A0A0A",
 };
 
-export const fontSizes = {};
+export const fontSizes = {
+  "2xs": "1.2em",
+  xs: "1.4em",
+  sm: "1.6em",
+  md: "2.0em",
+  lg: "2.4em",
+  xl: "3.2em",
+  "2xl": "4.8em",
+  "3xl": "6.4em",
+};
 
 export const fonts = {
   sans: "Roboto, -apple-system, system-ui, sans-serif",
